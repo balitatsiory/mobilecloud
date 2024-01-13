@@ -79,39 +79,38 @@ const App: React.FC = () => (
       <IonTabs>
 
         <IonRouterOutlet>
-          <Route path="/tab3">
-            <Route exact path="/">
-              <Login />
-            </Route>
+          <Route exact path="/">
+            <Login />
+          </Route>
 
-            <Route exact path="/inscription">
-              <Inscription />
-            </Route>
+          <Route exact path="/inscription">
+            <Inscription />
+          </Route>
 
-            <Route exact path="/ajoutannonce">
-              <Ajoutannonce />
-            </Route>
+          <Route exact path="/ajoutannonce">
+            <Ajoutannonce />
+          </Route>
 
-            <Route exact path="/profil">
-              <Profil />
-            </Route>
+          <Route exact path="/profil">
+            <Profil />
+          </Route>
 
-            <Route exact path="/detailannonce">
-              <Detailannonce />
-            </Route>
+          <Route exact path="/detailannonce">
+            <Detailannonce />
+          </Route>
 
-            <Route exact path="/modifierannonce">
-              <Modifierannonce />
-            </Route>
+          <Route exact path="/modifierannonce">
+            <Modifierannonce />
+          </Route>
 
-            <Route exact path="/reglage">
-              <Reglage />
-            </Route>
+          <Route exact path="/reglage">
+            <Reglage />
+          </Route>
 
 
-            <Route exact path="/Notification">
-              <Notification />
-            </Route>
+          <Route exact path="/Notification">
+            <Notification />
+          </Route>
 
 
 
