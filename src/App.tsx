@@ -53,7 +53,6 @@ const App: React.FC = () => (
     <IonReactRouter>
 
       {/* <IonToolbar className="center-buttons">
-      {/* <IonToolbar className="center-buttons">
     <IonIcon aria-hidden="true" icon={arrowBackOutline} />
     <IonButtons slot="start">
     <IonBackButton></IonBackButton>
@@ -62,13 +61,13 @@ const App: React.FC = () => (
     <IonButtons slot="end">
       <IonButton> <IonIcon aria-hidden="true" icon={logOutOutline} style={{ color: '#a45dff'}} /> </IonButton>
     </IonButtons>
-  </IonToolbar> */}
-
+  </IonToolbar>
+ */}
       <IonToolbar className="center-buttons">
         <IonButtons slot="start">
           <IonButton>Start</IonButton>
         </IonButtons>
-        <IonTitle><img src={userpic} /></IonTitle>
+        <IonTitle><img src={userpic} style={{ width: '154px', marginLeft: '30px' }}/></IonTitle>
         <IonButtons slot="end">
           <IonButton>End</IonButton>
         </IonButtons>
