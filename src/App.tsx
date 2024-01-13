@@ -49,23 +49,8 @@ const App: React.FC = () => (
       <IonTabs>
 
         <IonRouterOutlet>
-          <Route exact path="/tab1">
-            {/* <Tab1 /> */}
-            <Profil />
-
-          </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
-          </Route>
           <Route path="/tab3">
-            <Tab3 />
-          </Route>
-
           <Route exact path="/">
-            <Redirect to="/tab1" />
-          </Route>
-
-          <Route exact path="/login">
             <Login />
           </Route>
 
@@ -101,10 +86,11 @@ const App: React.FC = () => (
             <IonLabel>Profil</IonLabel>
           </IonTabButton>
           <IonTabButton className="tab-button"  tab="tab2" href="/tab2">
+          <IonTabButton className="tab-button" tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton className="tab-button"  tab="tab3" href="/tab3">
+          <IonTabButton className="tab-button" tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={chatbubbleEllipsesOutline} />
             <IonLabel>Message</IonLabel>
           </IonTabButton>
