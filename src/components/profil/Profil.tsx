@@ -9,7 +9,7 @@ import { IonIcon } from "@ionic/react";
 import { callOutline, mailOpen } from 'ionicons/icons';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './profil.css'
-import userpic from '../../assets/mi.png'
+import userpic from '../../assets/utilisateur.png'
 import { useState } from 'react';
 
 import { Button } from 'semantic-ui-react';
@@ -56,7 +56,7 @@ const Profil: React.FC = () => {
                         }}
                     >
                         <center>
-                            <img src={userpic} alt="User" style={{ right: '150px'}} />
+                            <img src={userpic} alt="User" style={{ width: '70px'}} />
                         </center>
                         <Container maxWidth="sm">
                             <Typography
