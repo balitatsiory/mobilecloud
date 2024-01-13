@@ -103,7 +103,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
                             </Grid>
 
                             <Grid item xs={12} md={12}>
-                                <Link to="/listeannonce">
+                                <Link to="/profil">
                                     <Button inverted color='blue' type='submit'>
                                         S'inscrire
                                     </Button>

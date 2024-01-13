@@ -16,9 +16,6 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { person, square, chatbubbleEllipsesOutline, home, addCircleOutline, settingsOutline, arrowBackCircle, arrowBackOutline, notificationsCircle, notificationsCircleOutline, notifications, logOutOutline } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
 import { Login } from './components/login/login';
 import Inscription from './components/login/inscription';
 import Ajoutannonce from './components/annonce/ajoutannonce';
@@ -56,6 +53,7 @@ const App: React.FC = () => (
     <IonReactRouter>
 
       {/* <IonToolbar className="center-buttons">
+      {/* <IonToolbar className="center-buttons">
     <IonIcon aria-hidden="true" icon={arrowBackOutline} />
     <IonButtons slot="start">
     <IonBackButton></IonBackButton>
@@ -79,6 +77,9 @@ const App: React.FC = () => (
       <IonTabs>
 
         <IonRouterOutlet>
+          <Route exact path="/login">
+            <Login />
+          </Route>
           <Route exact path="/">
             <Login />
           </Route>
@@ -117,11 +118,11 @@ const App: React.FC = () => (
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom" >
-          <IonTabButton className="tab-button" tab="tab1" href="/tab1">
+          <IonTabButton className="tab-button" tab="profil" href="/profil">
             <IonIcon aria-hidden="true" icon={person} />
             <IonLabel>Profil</IonLabel>
           </IonTabButton>
-          <IonTabButton className="tab-button" tab="tab2" href="/tab2">
+          <IonTabButton className="tab-button" tab="ajoutannonce" href="/ajoutannonce">
             <IonIcon aria-hidden="true" icon={addCircleOutline} />
             <IonLabel>Ajout</IonLabel>
           </IonTabButton>
@@ -130,6 +131,7 @@ const App: React.FC = () => (
             <IonLabel>Notification</IonLabel>
           </IonTabButton>
         </IonTabBar>
+
 
 
 
