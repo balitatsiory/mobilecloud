@@ -1,0 +1,12 @@
+npm install semantic-ui-react semantic-ui-css
+npm install mdb-react-ui-kit
+mui
+
+npm install bootstrap
+
+android : 
+ionic build
+npm install @capacitor/android
+npm install @capacitor/core@latest
+npx cap add android
+npx cap open android
