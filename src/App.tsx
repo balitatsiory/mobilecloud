@@ -95,16 +95,16 @@ const App: React.FC = () => (
 
         </IonRouterOutlet>
 
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+        <IonTabBar slot="bottom" >
+          <IonTabButton className="tab-button" tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={person} />
             <IonLabel>Profil</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton className="tab-button"  tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton className="tab-button"  tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={chatbubbleEllipsesOutline} />
             <IonLabel>Message</IonLabel>
           </IonTabButton>
@@ -116,5 +116,3 @@ const App: React.FC = () => (
 );
 
 export default App;
-
-

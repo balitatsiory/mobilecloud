@@ -9,7 +9,7 @@ import { IonIcon } from "@ionic/react";
 import { callOutline, mailOpen } from 'ionicons/icons';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './profil.css'
-import userpic from '../../assets/user.png'
+import userpic from '../../assets/mi.png'
 import { useState } from 'react';
 
 import { Button } from 'semantic-ui-react';
@@ -56,7 +56,7 @@ const Profil: React.FC = () => {
                         }}
                     >
                         <center>
-                            <img src={userpic} alt="User" />
+                            <img src={userpic} alt="User" style={{ right: '150px'}} />
                         </center>
                         <Container maxWidth="sm">
                             <Typography
@@ -70,7 +70,7 @@ const Profil: React.FC = () => {
 
                             <center>
                                 <a href="tel:+261328645925">
-                                    <IonButton size="small" style={{ marginRight: '5px' }}>
+                                    <IonButton size="small" style={{ marginRight: '5px' , '--ion-color-primary': '#a45dff'}}>
                                         <IonIcon icon={callOutline} />
                                         +261328645925
                                     </IonButton>
@@ -78,7 +78,7 @@ const Profil: React.FC = () => {
 
                                 <a href="mailto:example@gmail.com">
 
-                                    <IonButton size="small">
+                                    <IonButton size="small" style={{ '--ion-color-primary': '#a45dff' }}>
                                         <IonIcon icon={mailOpen} />
                                         example@gmail.com
                                     </IonButton>
