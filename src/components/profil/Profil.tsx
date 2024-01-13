@@ -56,7 +56,7 @@ const Profil: React.FC = () => {
                         }}
                     >
                         <center>
-                            <img src={userpic} alt="User" style={{ right: '150px'}} />
+                            <img src={userpic} alt="User" style={{ width: '150px'}} />
                         </center>
                         <Container maxWidth="sm">
                             <Typography

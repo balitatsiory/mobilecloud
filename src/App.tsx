@@ -1,12 +1,14 @@
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
+  IonButton,
   IonIcon,
   IonLabel,
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
   IonTabs,
+  IonToolbar,
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -46,6 +48,12 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp className="custom-background">
     <IonReactRouter>
+
+{/* <IonToolbar>
+  <IonButton slot="start">
+    <IonButton default-href="#"></IonButton>
+  </IonButton>
+</IonToolbar> */}
       <IonTabs>
 
         <IonRouterOutlet>
@@ -109,6 +117,8 @@ const App: React.FC = () => (
             <IonLabel>Message</IonLabel>
           </IonTabButton>
         </IonTabBar>
+
+        
 
       </IonTabs>
     </IonReactRouter>
