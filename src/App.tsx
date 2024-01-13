@@ -16,9 +16,6 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { person, square, chatbubbleEllipsesOutline, home, addCircleOutline, settingsOutline, arrowBackCircle, arrowBackOutline, notificationsCircle, notificationsCircleOutline, notifications, logOutOutline } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
 import { Login } from './components/login/login';
 import Inscription from './components/login/inscription';
 import Ajoutannonce from './components/annonce/ajoutannonce';
@@ -55,7 +52,7 @@ const App: React.FC = () => (
   <IonApp className="custom-background">
     <IonReactRouter>
 
-  {/* <IonToolbar className="center-buttons">
+      {/* <IonToolbar className="center-buttons">
     <IonIcon aria-hidden="true" icon={arrowBackOutline} />
     <IonButtons slot="start">
     <IonBackButton></IonBackButton>
@@ -66,7 +63,7 @@ const App: React.FC = () => (
     </IonButtons>
   </IonToolbar> */}
 
-    <IonToolbar className="center-buttons">
+      <IonToolbar className="center-buttons">
         <IonButtons slot="start">
           <IonButton>Start</IonButton>
         </IonButtons>
@@ -79,23 +76,10 @@ const App: React.FC = () => (
       <IonTabs>
 
         <IonRouterOutlet>
-          <Route exact path="/tab1">
-            {/* <Tab1 /> */}
-            <Profil />
-
-          </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
-          </Route>
-          <Route path="/tab3">
-            <Tab3 />
-          </Route>
-
-          <Route exact path="/">
-            <Redirect to="/tab1" />
-          </Route>
-
           <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/">
             <Login />
           </Route>
 
@@ -133,21 +117,21 @@ const App: React.FC = () => (
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom" >
-          <IonTabButton className="tab-button" tab="tab1" href="/tab1">
+          <IonTabButton className="tab-button" tab="profil" href="/profil">
             <IonIcon aria-hidden="true" icon={person} />
             <IonLabel>Profil</IonLabel>
           </IonTabButton>
-          <IonTabButton className="tab-button"  tab="tab2" href="/tab2">
+          <IonTabButton className="tab-button" tab="ajoutannonce" href="/ajoutannonce">
             <IonIcon aria-hidden="true" icon={addCircleOutline} />
             <IonLabel>Ajout</IonLabel>
           </IonTabButton>
-          <IonTabButton className="tab-button"  tab="tab3" href="/Notification">
+          <IonTabButton className="tab-button" tab="tab3" href="/Notification">
             <IonIcon aria-hidden="true" icon={notificationsCircleOutline} />
             <IonLabel>Notification</IonLabel>
           </IonTabButton>
         </IonTabBar>
 
-        
+
 
       </IonTabs>
     </IonReactRouter>
