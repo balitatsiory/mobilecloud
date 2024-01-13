@@ -18,7 +18,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
                 <div className={classNames(styles.root, className)}>
                     <h1 className={styles.title}>Inscription</h1>
 
-                    <form action='' method='post'>
+                    <form action='http://localhost:1784/login/register' method='post'>
                         <Grid container spacing={1} rowSpacing={3}>
 
                             <Grid item xs={12} md={12}>
@@ -27,7 +27,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
 
                                 <Input iconPosition='left' required>
                                     <Icon name='user' />
-                                    <input type='text' />
+                                    <input type='text' name="nom"/>
                                 </Input><br />
                             </Grid>
 
@@ -37,7 +37,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
 
                                 <Input iconPosition='left' required>
                                     <Icon name='user' />
-                                    <input type='text' />
+                                    <input type='text' name="prenom"/>
                                 </Input><br />
                             </Grid>
 
@@ -49,7 +49,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
 
                                 <Input iconPosition='left' required>
                                     <Icon name='user' />
-                                    <input type='date' />
+                                    <input type='date' name="datedenaissance"/>
                                 </Input><br />
 
                             </Grid>
@@ -62,7 +62,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
 
                                 <Input iconPosition='left' required>
                                     <Icon name='phone' />
-                                    <input type='text' />
+                                    <input type='text' name="telephone"/>
                                 </Input><br />
 
                             </Grid>
@@ -75,7 +75,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
 
                                 <Input iconPosition='left' required>
                                     <Icon name='at' />
-                                    <input type='mail' placeholder='example@gmail.com' />
+                                    <input type='mail' placeholder='example@gmail.com' name="email"/>
                                 </Input><br />
 
                             </Grid>
@@ -86,7 +86,7 @@ const Inscription: React.FC<InscriptionProps> = ({ className }: InscriptionProps
                                     label={{ icon: 'asterisk' }}
                                     labelPosition='left corner'
                                     type='password'
-                                    required
+                                    required name="motdepasse"
                                 /> <br />
                             </Grid>
 
