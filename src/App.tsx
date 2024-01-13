@@ -65,79 +65,77 @@ const App: React.FC = () => (
   </IonToolbar> */}
 
       <IonToolbar className="center-buttons">
-        <IonToolbar className="center-buttons">
-          <IonButtons slot="start">
-            <IonButton>Start</IonButton>
-          </IonButtons>
-          <IonTitle><img src={userpic} /></IonTitle>
-          <IonButtons slot="end">
-            <IonButton>End</IonButton>
-          </IonButtons>
-        </IonToolbar>
+        <IonButtons slot="start">
+          <IonButton>Start</IonButton>
+        </IonButtons>
+        <IonTitle><img src={userpic} /></IonTitle>
+        <IonButtons slot="end">
+          <IonButton>End</IonButton>
+        </IonButtons>
+      </IonToolbar>
 
-        <IonTabs>
+      <IonTabs>
 
-          <IonRouterOutlet>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/">
-              <Login />
-            </Route>
+        <IonRouterOutlet>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/">
+            <Login />
+          </Route>
 
-            <Route exact path="/inscription">
-              <Inscription />
-            </Route>
+          <Route exact path="/inscription">
+            <Inscription />
+          </Route>
 
-            <Route exact path="/ajoutannonce">
-              <Ajoutannonce />
-            </Route>
+          <Route exact path="/ajoutannonce">
+            <Ajoutannonce />
+          </Route>
 
-            <Route exact path="/profil">
-              <Profil />
-            </Route>
+          <Route exact path="/profil">
+            <Profil />
+          </Route>
 
-            <Route exact path="/detailannonce">
-              <Detailannonce />
-            </Route>
+          <Route exact path="/detailannonce">
+            <Detailannonce />
+          </Route>
 
-            <Route exact path="/modifierannonce">
-              <Modifierannonce />
-            </Route>
+          <Route exact path="/modifierannonce">
+            <Modifierannonce />
+          </Route>
 
-            <Route exact path="/reglage">
-              <Reglage />
-            </Route>
-
-
-            <Route exact path="/Notification">
-              <Notification />
-            </Route>
+          <Route exact path="/reglage">
+            <Reglage />
+          </Route>
 
 
+          <Route exact path="/Notification">
+            <Notification />
+          </Route>
 
-          </IonRouterOutlet>
 
-          <IonTabBar slot="bottom" >
-            <IonTabButton className="tab-button" tab="profil" href="/profil">
-              <IonIcon aria-hidden="true" icon={person} />
-              <IonLabel>Profil</IonLabel>
-            </IonTabButton>
-            <IonTabButton className="tab-button" tab="ajoutannonce" href="/ajoutannonce">
-              <IonIcon aria-hidden="true" icon={addCircleOutline} />
-              <IonLabel>Ajout</IonLabel>
-            </IonTabButton>
-            <IonTabButton className="tab-button" tab="tab3" href="/Notification">
-              <IonTabButton className="tab-button" tab="tab3" href="/Notification">
-                <IonIcon aria-hidden="true" icon={notificationsCircleOutline} />
-                <IonLabel>Notification</IonLabel>
-              </IonTabButton>
-          </IonTabBar>
+
+        </IonRouterOutlet>
+
+        <IonTabBar slot="bottom" >
+          <IonTabButton className="tab-button" tab="profil" href="/profil">
+            <IonIcon aria-hidden="true" icon={person} />
+            <IonLabel>Profil</IonLabel>
+          </IonTabButton>
+          <IonTabButton className="tab-button" tab="ajoutannonce" href="/ajoutannonce">
+            <IonIcon aria-hidden="true" icon={addCircleOutline} />
+            <IonLabel>Ajout</IonLabel>
+          </IonTabButton>
+          <IonTabButton className="tab-button" tab="tab3" href="/Notification">
+            <IonIcon aria-hidden="true" icon={notificationsCircleOutline} />
+            <IonLabel>Notification</IonLabel>
+          </IonTabButton>
+        </IonTabBar>
 
 
 
 
-        </IonTabs>
+      </IonTabs>
     </IonReactRouter>
   </IonApp>
 );
