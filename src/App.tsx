@@ -123,16 +123,13 @@ const App: React.FC = () => (
             <IonLabel>Profil</IonLabel>
           </IonTabButton>
           <IonTabButton className="tab-button" tab="tab2" href="/tab2">
-            <IonTabButton className="tab-button" tab="tab2" href="/tab2">
-              <IonIcon aria-hidden="true" icon={home} />
-              <IonLabel>Home</IonLabel>
-              <IonIcon aria-hidden="true" icon={addCircleOutline} />
-              <IonLabel>Ajout</IonLabel>
-            </IonTabButton>
-            <IonTabButton className="tab-button" tab="tab3" href="/Notification">
-              <IonIcon aria-hidden="true" icon={notificationsCircleOutline} />
-              <IonLabel>Notification</IonLabel>
-            </IonTabButton>
+            <IonIcon aria-hidden="true" icon={addCircleOutline} />
+            <IonLabel>Ajout</IonLabel>
+          </IonTabButton>
+          <IonTabButton className="tab-button" tab="tab3" href="/Notification">
+            <IonIcon aria-hidden="true" icon={notificationsCircleOutline} />
+            <IonLabel>Notification</IonLabel>
+          </IonTabButton>
         </IonTabBar>
 
 
